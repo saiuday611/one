@@ -265,7 +265,7 @@ footer{margin-top:70px;padding:60px 0 30px;border-top:1px solid var(--border);ba
       <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
       <a class="brand" href="#">
         <span class="brand-mark"><i class="fas fa-gem"></i></span>
-        <span class="brand-text">Nexus<span>Shop</span></span>
+        <span class="brand-text">Sai<span>Shop</span></span>
       </a>
     </div>
     <nav class="main-nav">
