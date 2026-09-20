@@ -16,7 +16,7 @@
       --bg-card: #ffffff;
       --primary: #2e2b3c;
       --primary-soft: #4a445e;
-      --accent: #e3856b;      /* softer coral */
+      --accent: #e3856b;
       --accent-soft: #fbe4dc;
       --accent-deep: #c96e55;
       --muted: #6f6b7f;
@@ -33,16 +33,8 @@
       --container: 1240px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
       background: var(--bg);
@@ -51,17 +43,8 @@
       -webkit-font-smoothing: antialiased;
       padding-bottom: 20px;
     }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      display: block;
-      max-width: 100%;
-    }
-
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
     button {
       cursor: pointer;
       font-family: inherit;
@@ -70,10 +53,7 @@
       color: inherit;
       transition: var(--transition);
     }
-
-    input {
-      font-family: inherit;
-    }
+    input { font-family: inherit; }
 
     .container {
       width: 100%;
@@ -85,9 +65,12 @@
     /* ---------- UTILITIES ---------- */
     .muted { color: var(--muted); }
     .text-center { text-align: center; }
-    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+    }
 
-    /* ---------- BUTTONS (friendly, rounded, soft) ---------- */
+    /* ---------- BUTTONS ---------- */
     .btn {
       display: inline-flex;
       align-items: center;
@@ -103,7 +86,6 @@
       line-height: 1.2;
       background: transparent;
     }
-
     .btn-primary {
       background: var(--accent);
       color: #fff;
@@ -116,7 +98,6 @@
       transform: translateY(-3px);
       box-shadow: 0 14px 26px rgba(227, 133, 107, 0.35);
     }
-
     .btn-secondary {
       background: var(--primary);
       color: #fff;
@@ -128,7 +109,6 @@
       transform: translateY(-2px);
       box-shadow: 0 10px 20px rgba(46, 43, 60, 0.12);
     }
-
     .btn-outline {
       background: transparent;
       color: var(--primary);
@@ -140,7 +120,6 @@
       border-color: var(--primary);
       transform: translateY(-2px);
     }
-
     .btn-ghost {
       background: rgba(255, 255, 255, 0.2);
       color: #fff;
@@ -152,13 +131,9 @@
       border-color: rgba(255, 255, 255, 0.6);
       transform: translateY(-2px);
     }
+    .btn-sm { padding: 10px 20px; font-size: 13px; }
 
-    .btn-sm {
-      padding: 10px 20px;
-      font-size: 13px;
-    }
-
-    /* ---------- HEADER (soft, clean) ---------- */
+    /* ---------- HEADER ---------- */
     header {
       position: sticky;
       top: 0;
@@ -168,7 +143,6 @@
       -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(46, 43, 60, 0.05);
     }
-
     .header-inner {
       display: flex;
       align-items: center;
@@ -177,7 +151,6 @@
       padding: 12px 0;
       min-height: 74px;
     }
-
     .brand {
       display: flex;
       align-items: center;
@@ -326,12 +299,9 @@
       background: var(--accent-soft);
       color: var(--accent-deep);
     }
-    #mobileMenu ul li a i {
-      width: 24px;
-      color: var(--muted);
-    }
+    #mobileMenu ul li a i { width: 24px; color: var(--muted); }
 
-    /* ---------- HERO (warm overlay) ---------- */
+    /* ---------- HERO ---------- */
     .hero {
       position: relative;
       display: flex;
@@ -352,10 +322,7 @@
       opacity: 0.25;
       z-index: 0;
     }
-    .hero .container {
-      position: relative;
-      z-index: 1;
-    }
+    .hero .container { position: relative; z-index: 1; }
     .hero .badge {
       display: inline-block;
       background: rgba(227, 133, 107, 0.25);
@@ -386,11 +353,7 @@
       margin-bottom: 32px;
       line-height: 1.6;
     }
-    .hero .actions {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
+    .hero .actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
     /* ---------- SECTIONS ---------- */
     .section { padding: 64px 0; }
@@ -432,7 +395,7 @@
       color: #fff;
     }
 
-    /* ---------- CATEGORIES (soft round cards) ---------- */
+    /* ---------- CATEGORIES ---------- */
     .categories-grid {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -473,7 +436,7 @@
     .cat-card h4 { font-size: 16px; font-weight: 600; }
     .cat-card .count { font-size: 13px; color: var(--muted); margin-top: 6px; }
 
-    /* ---------- PRODUCTS (friendly cards) ---------- */
+    /* ---------- PRODUCTS ---------- */
     .products-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -624,7 +587,7 @@
       border-color: var(--success);
     }
 
-    /* ---------- DEAL (friendly card) ---------- */
+    /* ---------- DEAL ---------- */
     .deal-wrap {
       display: flex;
       gap: 0;
@@ -717,7 +680,7 @@
       letter-spacing: 0.6px;
     }
 
-    /* ---------- TESTIMONIALS (friendly cards) ---------- */
+    /* ---------- TESTIMONIALS ---------- */
     .testimonials-scroll {
       display: flex;
       gap: 24px;
@@ -773,7 +736,7 @@
     .testimonial-card .author .name { font-weight: 600; font-size: 15px; }
     .testimonial-card .author .role { font-size: 13px; color: var(--muted); }
 
-    /* ---------- NEWSLETTER (friendly, rounded) ---------- */
+    /* ---------- NEWSLETTER ---------- */
     .newsletter-wrap {
       background: linear-gradient(135deg, var(--primary) 0%, var(--primary-soft) 100%);
       border-radius: var(--radius);
@@ -910,13 +873,34 @@
       font-size: 14px;
     }
 
+    /* ---------- TOAST ---------- */
+    .toast {
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(46, 43, 60, 0.92);
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 60px;
+      font-weight: 500;
+      font-size: 15px;
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .toast.show { opacity: 1; }
+
     /* ---------- RESPONSIVE ---------- */
     @media (max-width: 1200px) {
       .products-grid { grid-template-columns: repeat(3, 1fr); }
       .categories-grid { grid-template-columns: repeat(3, 1fr); }
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
     }
-
     @media (max-width: 992px) {
       .hero h1 { font-size: 40px; }
       .hero { min-height: 400px; margin: 20px 20px 0; padding: 48px 0; }
@@ -927,7 +911,6 @@
       .newsletter-wrap form { max-width: 100%; }
       .search-wrap { min-width: 170px; }
     }
-
     @media (max-width: 768px) {
       nav.main-nav { display: none; }
       .mobile-toggle { display: grid; }
@@ -952,7 +935,6 @@
       .hero .actions .btn { padding: 12px 24px; font-size: 14px; }
       .section { padding: 44px 0; }
     }
-
     @media (max-width: 480px) {
       .products-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
       .categories-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -975,29 +957,6 @@
       .cat-card .icon-wrap { width: 52px; height: 52px; font-size: 22px; }
       .cat-card h4 { font-size: 14px; }
     }
-
-    /* feedback / toast */
-    .toast {
-      position: fixed;
-      bottom: 28px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--primary);
-      color: #fff;
-      padding: 14px 32px;
-      border-radius: 60px;
-      font-weight: 500;
-      font-size: 15px;
-      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
-      z-index: 999;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.25s ease;
-      backdrop-filter: blur(8px);
-      background: rgba(46, 43, 60, 0.92);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    .toast.show { opacity: 1; }
   </style>
 </head>
 
@@ -1007,4 +966,13 @@
   <header>
     <div class="container header-inner">
       <div style="display:flex;align-items:center;gap:16px;">
-        <button class="mobile
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <a class="brand" href="#">
+          <i class="fas fa-store-alt"></i>
+          <span>Nexus<span class="accent">Shop</span></span>
+        </a>
+      </div>
+
+      <nav
